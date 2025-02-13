@@ -1,4 +1,4 @@
-his is a simple yet powerful To-Do List application built with ReactJS, TailwindCSS, and React DnD. It allows users to:
+This is a simple yet powerful To-Do List application built with ReactJS, TailwindCSS, and React DnD. It allows users to:
 Holygrail layout
 ✅ Add tasks
 ✅ Mark tasks as completed
