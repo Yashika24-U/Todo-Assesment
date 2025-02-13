@@ -1,4 +1,6 @@
 import React from 'react'
+import { Home, List, Settings } from "lucide-react";
+
 
 
 const Layout = ({children,deletedTasks,setdeletedTasks,tasks,setTasks}) => {
@@ -20,9 +22,23 @@ const Layout = ({children,deletedTasks,setdeletedTasks,tasks,setTasks}) => {
         {/* Main Layout */}
         <div className="flex flex-1 overflow-hidden">
             {/* Left Sidebar */}
-            <aside className='w-64 bg-gray-200 p-4 hidden md:block fixed h-full'>
+            {/* <aside className='w-64 bg-gray-200 p-4 hidden md:block fixed h-full'>
                 <h2 className='font-bold text-primary'>Left Sidebar</h2>
-            </aside>
+            </aside> */}
+            <aside className="w-64 bg-gray-200 p-4 hidden md:block fixed h-full">
+            <h2 className="font-bold text-primary">Menu</h2>
+        <ul className="mt-4 space-y-3">
+            <li className="flex items-center gap-2 cursor-pointer hover:text-primary">
+            <Home size={20} /> Dashboard
+            </li>
+            <li className="flex items-center gap-2 cursor-pointer hover:text-primary">
+            <List size={20} /> Tasks
+            </li>
+            <li className="flex items-center gap-2 cursor-pointer hover:text-primary">
+            <Settings size={20} /> Settings
+            </li>
+        </ul>
+        </aside>;
 
 
             <main className='flex-1 p-4 overflow-y-auto ml-64 mr-64'>
